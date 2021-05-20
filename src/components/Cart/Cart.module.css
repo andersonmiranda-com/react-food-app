@@ -2,7 +2,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  max-height: 20rem;
+  max-height: 30rem;
   overflow: auto;
 }
 
@@ -11,7 +11,7 @@
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin: 1rem 0;
 }
 
