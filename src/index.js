@@ -1,6 +1,6 @@
 import ReactDOM from "react-dom";
 
-import { CartContextProvider } from "./store/cartContext";
+import { CartContextProvider } from "./store/CartContext";
 
 import "./index.css";
 import App from "./App";
