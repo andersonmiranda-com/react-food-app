@@ -1,24 +1,17 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
+
+import CartContext from "./store/cartContext";
 
 import Header from "./components/Layout/Header";
 import Meals from "./components/Meals/Meals";
 import Cart from "./components/Cart/Cart";
 
 function App() {
-  const [cartIsShown, setCartIsShown] = useState(false);
-
-  const openCartHandle = () => {
-    setCartIsShown(true);
-  };
-
-  const closeCartHandle = () => {
-    setCartIsShown(false);
-  };
-
+  const ctx = useContext(CartContext);
   return (
     <div>
-      <Header onOpenCart={openCartHandle} />
-      {cartIsShown && <Cart onCloseCart={closeCartHandle} />}
+      <Header />
+      {ctx.cartIsShown && <Cart />}
       <main>
         <Meals />
       </main>

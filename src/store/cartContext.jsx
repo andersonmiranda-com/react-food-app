@@ -9,7 +9,9 @@ const CartContext = React.createContext({
 
 export const CartContextProvider = (props) => {
   const [cartIsShown, setCartIsShown] = useState(false);
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState([
+    { id: "c1", name: "Sushi...", amount: 2, price: 12.99 },
+  ]);
 
   const showCartHandler = () => {
     setCartIsShown(true);
